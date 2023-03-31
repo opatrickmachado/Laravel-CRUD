@@ -6,12 +6,15 @@
 h1 {
     text-shadow: 1px 1px rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.5);
-}  
-  
+}
+
 body {
-    background-color: rgba(255, 255, 255, 0.7); /* Define uma cor de fundo sólida com uma opacidade de 0.7 */
-    background-size: auto; /* Define a imagem de fundo para o tamanho original */
-    background-position: right center; /* Alinha a imagem ao canto direito e ao centro verticalmente */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Define uma cor de fundo sólida com uma opacidade de 0.7 */
+    background-size: auto;
+    /* Define a imagem de fundo para o tamanho original */
+    background-position: right center;
+    /* Alinha a imagem ao canto direito e ao centro verticalmente */
     min-height: 30vh;
     padding-bottom: 100px;
     position: relative;
@@ -94,21 +97,21 @@ header {
     flex-direction: column;
 }
 
-  
+
 .search-box {
     display: flex;
     align-items: center;
     margin: 0 auto;
     width: 80%;
     max-width: 600px;
-  }
-  
-  
-  
+}
+
+
+
 input[type="text"] {
     margin-right: 10px;
 }
-  
+
 button {
     background-color: #007bff;
     color: #fff;
@@ -119,15 +122,15 @@ button {
     width: 80px;
     margin: 10px 0;
 }
-  
+
 button:hover {
     background-color: #0069d9;
-}   
+}
 
 .exit-btn span {
     vertical-align: middle;
 }
-   
+
 #search-container h1 {
     color: #ff0000;
     margin-bottom: 30px;
@@ -145,7 +148,7 @@ button:hover {
 }
 
 #events-container h2 {
-    color:#000000;
+    color: #000000;
     display: block;
     margin-bottom: 10px;
     text-shadow: 1px 1px rgb(38, 0, 255);
