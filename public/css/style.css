@@ -1,6 +1,6 @@
 /* General */
 * {
-    font-family: 'Roboto';
+    font-family: "Roboto";
 }
 
 h1 {
@@ -21,8 +21,8 @@ body {
 }
 
 header {
-    background-color: #FFF;
-    border-bottom: 1px solid #CCC;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
 }
 
 .row {
@@ -44,9 +44,9 @@ header {
 }
 
 .msg {
-    background-color: #D4EDDA;
+    background-color: #d4edda;
     color: #155724;
-    border: 1px solid #C3E6CB;
+    border: 1px solid #c3e6cb;
     width: 100%;
     margin-bottom: 0;
     text-align: center;
@@ -57,7 +57,7 @@ header {
     margin: 15px 0;
     color: #004085;
     background-color: #cce5ff;
-    border: 1px solid #B8DAFF;
+    border: 1px solid #b8daff;
     padding: 10px;
     width: 275px;
 }
@@ -71,7 +71,7 @@ header {
 
 #navbar {
     justify-content: space-between;
-    background-color: #FFF;
+    background-color: #fff;
     padding: 5px 0;
 }
 
@@ -87,8 +87,8 @@ header {
 /* Search Container */
 #search-container {
     background-image: url("/img/background.png");
-    background-position: left right;
-    background-repeat: repeat-x;
+    background-position: right 25% center;
+    background-repeat: no-repeat;
     background-size: auto;
     height: 50vh;
     display: flex;
@@ -97,7 +97,6 @@ header {
     flex-direction: column;
 }
 
-
 .search-box {
     display: flex;
     align-items: center;
@@ -105,8 +104,6 @@ header {
     width: 80%;
     max-width: 600px;
 }
-
-
 
 input[type="text"] {
     margin-right: 10px;
@@ -164,7 +161,6 @@ button:hover {
     font-style: italic;
 }
 
-
 #cards-container {
     display: flex;
 }
@@ -174,18 +170,19 @@ button:hover {
     max-width: 25%;
     border-radius: 10px;
     padding: 0;
-    margin: .5%;
+    margin: 0.5%;
 }
 
 #events-container img {
     max-height: 150px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    object-fit: cover;
 }
 
 .card .card-date {
     font-size: 12px;
-    color: #CCC;
+    color: #ccc;
 }
 
 .card .card-title {
@@ -284,4 +281,3 @@ button:hover {
     width: 300px;
     margin-top: 20px;
 }
-

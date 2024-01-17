@@ -1,11 +1,23 @@
 @extends('layouts.main')
 
 @section('title', 'Criar Evento')
-         
+
 @section('content')
 
 <div id="event-create-container" class="col-md-6 offset-md-3">
     <h1>Crie o seu evento</h1>
+
+    <!-- Se houver erros de validação, exiba-os aqui -->
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
+
     <form action="/events" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
@@ -33,7 +45,7 @@
         </div>
         <div class="form-group">
             <label for="title">Descrição:</label>
-            <textarea name="description" id="description"  class="form-control" placeholder="O que vai acontecer no Evento?"></textarea>
+            <textarea name="description" id="description" class="form-control" placeholder="O que vai acontecer no Evento?"></textarea>
         </div>
         <div class="form-group">
             <label for="title">Adicione itens de Infraestrutura:</label>
